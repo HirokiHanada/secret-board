@@ -1,0 +1,40 @@
+Arguments: 
+  /home/vagrant/.nvm/versions/node/v10.14.2/bin/node /home/vagrant/.yarn/bin/yarn.js add pug@2.0.0-rc.4
+
+PATH: 
+  /home/vagrant/.yarn/bin:/home/vagrant/.config/yarn/global/node_modules/.bin:/home/vagrant/.nvm/versions/node/v10.14.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.14.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/vagrant/workspace/secret-board/package.json: Unexpected token / in JSON at position 116
+      at JSON.parse (<anonymous>)
+      at /home/vagrant/.yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/vagrant/.yarn/lib/cli.js:304:30)
+      at /home/vagrant/.yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "secret-board",
+    "version": "1.0.0",
+    "description": "秘密の匿名掲示板",
+    "main": "index.js",
+    "scripts": { //コマンドの追加。これで、yarn learn testってやると、test.jsを実行する。
+      "test": "node test.js"
+    },
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
